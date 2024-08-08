@@ -5,7 +5,7 @@ import javax.swing.JLabel;
 public class WindowApp {
   public int clickCounter = 0;
 
-  public void main(String[] args) {
+  public void start(String[] args) {
     // create a label
     JLabel label = new JLabel("Hello World");
     label.setSize(200, 200);
@@ -16,9 +16,12 @@ public class WindowApp {
 
     // add the label and button to the frame
     JFrame frame = new JFrame("Hello World");
+
     frame.add(label);
     frame.add(button);
     frame.setSize(400, 400);
+    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    frame.setLocation(100, 100);
     frame.setVisible(true);
 
     // add an action listener to the button
