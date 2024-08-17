@@ -4,7 +4,7 @@ import enums.BrazilianState;
 
 public class Main {
   public static void main(String[] args) {
-    BrazilianState state1 = BrazilianState.SP;
+    BrazilianState state1 = BrazilianState.SAO_PAULO;
 
     System.out.println(state1.getName());
     System.out.println(state1.getAbbreviation());
