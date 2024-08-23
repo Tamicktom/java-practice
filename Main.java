@@ -6,6 +6,7 @@ public class Main {
   public static void main(String[] args) {
     brazilianStates();
     selfInstanceTest();
+    localDateSample();
   }
 
   private static void brazilianStates() {
@@ -30,5 +31,11 @@ public class Main {
     SelfInstance selfInstance = SelfInstance.getInstance();
 
     selfInstance.print();
+  }
+
+  private static void localDateSample() {
+    LocalDateSample sample = new LocalDateSample();
+
+    sample.handle();
   }
 }
