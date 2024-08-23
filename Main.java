@@ -4,6 +4,11 @@ import enums.BrazilianState;
 
 public class Main {
   public static void main(String[] args) {
+    brazilianStates();
+    selfInstanceTest();
+  }
+
+  private static void brazilianStates() {
     BrazilianState state1 = BrazilianState.SAO_PAULO;
 
     System.out.println(state1.getName());
@@ -20,5 +25,10 @@ public class Main {
       System.out.println(message);
     }
   }
-}
 
+  private static void selfInstanceTest() {
+    SelfInstance selfInstance = SelfInstance.getInstance();
+
+    selfInstance.print();
+  }
+}
