@@ -22,5 +22,8 @@ public class LocalDateSample implements Handlable {
     DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
     LocalDate dataConcreta = LocalDate.parse("01/01/2020", formatter);
     System.out.println(dataConcreta);
+
+    System.out.println(dataConcreta.isAfter(LocalDate.now()));
+    System.out.println(dataConcreta.isBefore(LocalDate.now()));
   }
 }
