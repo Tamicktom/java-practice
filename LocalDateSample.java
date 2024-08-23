@@ -1,5 +1,6 @@
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
 
 public class LocalDateSample implements Handlable {
 
@@ -25,5 +26,8 @@ public class LocalDateSample implements Handlable {
 
     System.out.println(dataConcreta.isAfter(LocalDate.now()));
     System.out.println(dataConcreta.isBefore(LocalDate.now()));
+
+    System.out.println(
+        dataConcreta.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.LONG)));
   }
 }
