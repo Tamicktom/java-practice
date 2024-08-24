@@ -1,4 +1,5 @@
 import java.time.LocalDate;
+import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
 
@@ -29,5 +30,8 @@ public class LocalDateSample implements Handlable {
 
     System.out.println(
         dataConcreta.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.LONG)));
+
+    LocalTime horaAtual = LocalTime.now();
+    System.out.println(horaAtual);
   }
 }
